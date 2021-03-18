@@ -93,10 +93,13 @@ body {
     color: #fff;
 }
 .banner__img {
-    background-color: gray;
     height: 700px;
     position: relative;
     top: -45px;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .banner__content {
@@ -380,15 +383,44 @@ body {
 .slick-next {
     right: 30px;
 }
-// .slick-list {
-//     width: 70%;
-//     margin: auto;
-// }
+.slick-list {
+    width: 70%;
+    margin: auto;
+}
 
 // logos
 .logo {
     background-color: #000;
-    &__slick {
+    .test img {
+        width: 100%;
+    }
+}
+
+// footer
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000;
+    &__logo p {
+        font-size: 30px;
         color: #fff;
+        margin-top: 20px;
+    }
+    &__social {
+        padding-top: 43px;
+        
+    }
+    &__social i:hover {
+        color: #cc9966;
+    }
+    &__social i {
+        font-size: 20px;
+        padding: 0 15px;
+        color: #7f7f7f;
+    }
+    &__content {
+        font-size: 14px;
+        color: #7f7f7f;
+        padding-top: 30px;
     }
 }

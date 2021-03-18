@@ -37,7 +37,7 @@ $('.review__content').slick({
 });
 
 // logos
-$('.logo__slick').slick({
+$('.test').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,

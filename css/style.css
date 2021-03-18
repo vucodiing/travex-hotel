@@ -64,10 +64,12 @@ body {
   color: #fff; }
 
 .banner__img {
-  background-color: gray;
   height: 700px;
   position: relative;
   top: -45px; }
+  .banner__img img {
+    width: 100%;
+    object-fit: cover; }
 
 .banner__content {
   position: absolute;
@@ -300,9 +302,34 @@ body {
 .slick-next {
   right: 30px; }
 
+.slick-list {
+  width: 70%;
+  margin: auto; }
+
 .logo {
   background-color: #000; }
-  .logo__slick {
-    color: #fff; }
+  .logo .test img {
+    width: 100%; }
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000; }
+  .footer__logo p {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px; }
+  .footer__social {
+    padding-top: 43px; }
+  .footer__social i:hover {
+    color: #cc9966; }
+  .footer__social i {
+    font-size: 20px;
+    padding: 0 15px;
+    color: #7f7f7f; }
+  .footer__content {
+    font-size: 14px;
+    color: #7f7f7f;
+    padding-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
