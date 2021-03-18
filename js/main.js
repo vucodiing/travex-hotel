@@ -35,3 +35,13 @@ $('.review__content').slick({
     slidesToShow: 1,
     adaptiveHeight: true
 });
+
+// logos
+$('.logo__slick').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    adaptiveHeight: true
+});

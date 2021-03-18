@@ -137,19 +137,19 @@ body {
 //content
 // welcome
 .welcome__text,
-.welcom__icon--item {
+.welcome__icon--item {
     text-align: center;
 }
-.welcom__text--title {
+.welcome__text--title {
     font-size: 40px;
 }
-.welcom__icon--item {
+.welcome__icon--item {
     padding: 10px 10px;
 }
 .welcome__icon--title {
     font-size: 14px;
 }
-.welcom__text--content {
+.welcome__text--content {
     margin-top: 30px;
     font-size: 14px;
     @include d-flex();
@@ -380,7 +380,15 @@ body {
 .slick-next {
     right: 30px;
 }
-.slick-list {
-    width: 70%;
-    margin: auto;
+// .slick-list {
+//     width: 70%;
+//     margin: auto;
+// }
+
+// logos
+.logo {
+    background-color: #000;
+    &__slick {
+        color: #fff;
+    }
 }
