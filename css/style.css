@@ -22,12 +22,26 @@ body {
   background-color: #fff; }
 
 .header {
+  position: relative;
   background-image: url(/images/banner.jpeg);
   background-size: cover;
+  z-index: -2;
+  background-position: center;
   text-align: center; }
+  .header::after {
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
   .header__menu {
     background-color: #000;
-    position: relative;
+    padding: 5px 0;
+    position: fixed;
     z-index: 2;
     align-items: center; }
     .header__menu .menu--padding {
@@ -40,20 +54,22 @@ body {
   .header__content--bottom {
     font-size: 36px;
     color: #fff; }
-
-.logo {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center; }
-  .logo__text {
-    font-size: 30px;
-    color: #fff;
-    padding-left: 20px; }
-    .logo__text:hover a {
-      color: #fff; }
+  .header__arrow {
+    font-size: 60px;
+    color: #cc9966; }
+  .header__menu--logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .header__menu--logo__text {
+      font-size: 30px;
+      color: #fff;
+      padding-left: 20px; }
+      .header__menu--logo__text:hover a {
+        color: #fff; }
 
 .navbar-nav {
   flex-direction: row;

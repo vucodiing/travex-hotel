@@ -50,12 +50,27 @@ body {
 
 // menu
 .header {
+  position: relative;
   background-image: url(/images/banner.jpeg);
   background-size: cover;
+  z-index: -2;
+  background-position: center;
+  &::after {
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
   text-align: center;
   &__menu {
     background-color: $bg-black;
-    position: relative;
+    padding: 5px 0;
+    position: fixed;
     z-index: 2;
     align-items: center;
     .menu--padding {
@@ -74,20 +89,24 @@ body {
     font-size: 36px;
     color: #fff;
   }
-}
-
-.logo {
-  @include d-flex();
-  align-items: center;
-  &__text {
-    font-size: 30px;
-    color: $bgmain;
-    padding-left: 20px;
-    &:hover a {
-      color: $link-main;
+  &__arrow {
+    font-size: 60px;
+    color: #cc9966;
+  }
+  &__menu--logo {
+    @include d-flex();
+    align-items: center;
+    &__text {
+      font-size: 30px;
+      color: $bgmain;
+      padding-left: 20px;
+      &:hover a {
+        color: $link-main;
+      }
     }
   }
 }
+
 .navbar-nav {
   flex-direction: row;
   float: right;
