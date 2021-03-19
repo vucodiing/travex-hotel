@@ -21,13 +21,25 @@ body {
   font-weight: 400;
   background-color: #fff; }
 
-.menu {
-  background-color: #000;
-  position: relative;
-  z-index: 2;
-  align-items: center; }
-  .menu .menu--padding {
-    padding: 0; }
+.header {
+  background-image: url(/images/banner.jpeg);
+  background-size: cover;
+  text-align: center; }
+  .header__menu {
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+    align-items: center; }
+    .header__menu .menu--padding {
+      padding: 0; }
+  .header__content {
+    padding: 150px 0; }
+  .header__content--top, .header__content--main {
+    font-size: 60px;
+    color: #fff; }
+  .header__content--bottom {
+    font-size: 36px;
+    color: #fff; }
 
 .logo {
   display: -webkit-box;
@@ -57,47 +69,6 @@ body {
     .navbar-nav .nav-item:hover, .navbar-nav .nav-item:active {
       background-color: #cc9966;
       color: #fff; }
-
-.banner {
-  position: relative;
-  text-align: center;
-  color: #fff; }
-
-.banner__img {
-  height: 700px;
-  position: relative;
-  top: -45px; }
-  .banner__img img {
-    width: 100%;
-    object-fit: cover; }
-
-.banner__content {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%); }
-  .banner__content--1 {
-    font-size: 60px;
-    line-height: 90px; }
-  .banner__content--2 {
-    font-size: 60px;
-    line-height: 90px; }
-  .banner__content--3 {
-    font-size: 36px;
-    line-height: 54px; }
-
-.banner__arrow {
-  height: 47px;
-  width: 47px;
-  border-style: solid;
-  background-color: transparent;
-  position: relative;
-  z-index: 444;
-  border-color: #cc9966;
-  border-width: 0px 0px 5px 5px;
-  transform: rotate(-45deg);
-  bottom: 180px;
-  left: 50%; }
 
 .welcome__text,
 .welcome__icon--item {
