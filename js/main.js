@@ -1,47 +1,96 @@
+// click and scroll page
+$(".header__arrow").click(function () {
+  window.scrollTo(0, 631);
+});
+
+// scroll page
+$(document).ready(function () {
+  $(window).scroll(function (event) {
+    let pos_body = $("html,body").scrollTop();
+
+    // change color menu
+    if (pos_body > 200) {
+      $(".header__menu").css({
+        "background-color": "#000",
+        "box-shadow": "0px 0px 8px #00000052",
+      });
+    } else {
+      $(".header__menu").css({
+        "background-color": "transparent",
+        "box-shadow": "none",
+      });
+    }
+
+    // change background button menu HOME
+    if (pos_body < 630) {
+      $("#home").css("background-color", "#cc9966");
+    } else {
+      $("#home").css("background-color", "#000");
+    }
+
+    // change background button menu ABOUT
+    if ((pos_body > 630) & (pos_body < 1545)) {
+      $("#about").css("background-color", "#cc9966");
+    } else {
+      $("#about").css("background-color", "inherit");
+    }
+
+    // change background button menu ROOMS
+    if (pos_body > 1545) {
+      $("#room").css("background-color", "#cc9966");
+    } else {
+      $("#room").css("background-color", "inherit");
+    }
+  });
+});
+
 // counter
-$('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-        Counter: $(this).text()
-    }, {
+$(".count").each(function () {
+  $(this)
+    .prop("Counter", 0)
+    .animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
         duration: 4000,
-        easing: 'swing',
+        easing: "swing",
         step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
+          $(this).text(Math.ceil(now));
+        },
+      }
+    );
 });
 
 // inside hotel
-$('.hotel__img').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.hotel__button'
+$(".hotel__img").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".hotel__button",
 });
-$('.hotel__button').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.hotel__img',
-    centerMode: true,
-    focusOnSelect: true
+$(".hotel__button").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  asNavFor: ".hotel__img",
+  centerMode: true,
+  focusOnSelect: true,
 });
 
 // review
-$('.review__content').slick({
-    arrows: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
+$(".review__content").slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
 });
 
 // logos
-$('.test').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrows: true,
-    infinite: true,
-    speed: 300,
-    adaptiveHeight: true
+$(".logo").slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  dots: true,
+  // dotClass: slick - dots,
 });

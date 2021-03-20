@@ -20,6 +20,9 @@ $link-hover: #cc9966;
   transition: $transition;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 *,
 *:before,
 *:after {
@@ -48,13 +51,14 @@ body {
   background-color: $bgmain;
 }
 
-// menu
-.header {
-  position: relative;
-  background-image: url(/images/banner.jpeg);
+// header
+.header-bg {
+  background-image: url(../images/banner.jpeg);
   background-size: cover;
-  z-index: -2;
   background-position: center;
+  position: relative;
+  z-index: -2;
+  height: 700px;
   &::after {
     content: "";
     background-color: #000;
@@ -66,66 +70,103 @@ body {
     position: absolute;
     z-index: -1;
   }
-  text-align: center;
+}
+.header {
   &__menu {
-    background-color: $bg-black;
-    padding: 5px 0;
     position: fixed;
-    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  &__menu--logo {
+    display: flex;
     align-items: center;
-    .menu--padding {
-      padding: 0;
+    h1 {
+      margin-bottom: 0;
+      padding-left: 5px;
+      color: #fff;
     }
   }
+}
+.header {
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  &__menu--nav > ul {
+    height: 40px;
+    line-height: 40px;
+  }
+  &__menu--nav > ul > li {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    transition: 0.3s;
+  }
+  &__menu--nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+  }
+  &__menu--nav > ul > li > ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #dddddd;
+  }
+  ul li:last-child {
+    border: none;
+  }
+  ul li#home {
+    background-color: #cc9966;
+  }
+  &__menu--nav ul li:hover ul {
+    display: block;
+    background-color: #7f7f7f;
+  }
+  &__menu--nav ul li:hover {
+    background-color: #cc9966;
+    a {
+      color: #fff;
+    }
+  }
+
   &__content {
-    padding: 150px 0;
+    color: #fff;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &__content--top,
-  &__content--main {
+  &__content--mid {
     font-size: 60px;
-    color: #fff;
   }
-  &__content--bottom {
+  &__content-bottom {
     font-size: 36px;
-    color: #fff;
   }
+
   &__arrow {
     font-size: 60px;
     color: #cc9966;
-  }
-  &__menu--logo {
-    @include d-flex();
-    align-items: center;
-    &__text {
-      font-size: 30px;
-      color: $bgmain;
-      padding-left: 20px;
-      &:hover a {
-        color: $link-main;
-      }
-    }
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
   }
 }
 
-.navbar-nav {
-  flex-direction: row;
-  float: right;
-  .nav-item {
-    font-size: 14px;
-    width: 70px;
-    text-align: center;
-    @include transition(0.3s);
-    &:hover,
-    &:active {
-      background-color: $link-hover;
-      color: $link-main;
-    }
-  }
-}
-
-// banner
-
-//content
 // welcome
 .welcome__text,
 .welcome__icon--item {
@@ -133,6 +174,7 @@ body {
 }
 .welcome__text--title {
   font-size: 40px;
+  padding: 90px 0 10px;
 }
 .welcome__icon--item {
   padding: 10px 10px;
@@ -147,6 +189,8 @@ body {
   justify-content: center;
   p {
     max-width: 787px;
+    line-height: 28px;
+    color: #555;
   }
 }
 .welcome__gallery {
@@ -378,9 +422,19 @@ body {
 
 // logos
 .logo {
-  background-color: #000;
-  .test img {
+  background-color: #fff;
+  .slick-list {
     width: 100%;
+    .slick-track {
+      display: flex;
+      align-items: center;
+      img {
+        padding: 10px 40px;
+        &:focus {
+          border: none;
+        }
+      }
+    }
   }
 }
 
@@ -397,14 +451,15 @@ body {
   &__social {
     padding-top: 43px;
   }
-  &__social i:hover {
-    color: #cc9966;
-  }
-  &__social i {
-    font-size: 20px;
-    padding: 0 15px;
+  &__social a {
     color: #7f7f7f;
+    font-size: 20px;
+    padding: 0 20px;
+    &:hover {
+      color: #cc9966;
+    }
   }
+
   &__content {
     font-size: 14px;
     color: #7f7f7f;

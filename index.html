@@ -40,41 +40,75 @@
   <body>
     <!-- start header -->
     <div class="header">
+      <div class="header-bg"></div>
       <div class="container">
         <div class="header__menu">
           <div class="header__menu--logo">
-            <div class="logo__img">
-              <a href="index.html"
-                ><img src="./images/logo.png" alt="logo"
-              /></a>
-            </div>
-            <div class="logo__text">
-              <a href="index.html">Travex</a>
-            </div>
+            <img src="./images/logo.png" alt="logo web" />
+            <a href="index.html"><h1>Travex</h1></a>
           </div>
-          <div class="menu--padding">
-            <div class="navbar-nav d-none d-lg-inline-flex">
-              <a class="nav-item nav-link active" href="index.html">HOME</a>
-              <a class="nav-item nav-link" href="#">TRAVEL</a>
-              <a class="nav-item nav-link" href="#">SPA</a>
-              <a class="nav-item nav-link" href="#">ROMES</a>
-              <a class="nav-item nav-link" href="#">GALLERY</a>
-              <a class="nav-item nav-link" href="#">RESERVE</a>
-              <a class="nav-item nav-link" href="#">CONTACT</a>
-            </div>
+
+          <div class="header__menu--nav">
+            <ul>
+              <li id="home"><a href="#">HOME</a></li>
+              <li id="about">
+                <a href="#">ABOUT</a>
+              </li>
+              <li id="room">
+                <a href="#">ROOMS</a>
+                <ul>
+                  <li><a href="#">DELUX</a></li>
+                  <li><a href="#">FAMILY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">GALLERY</a>
+                <ul>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">REVERSE</a>
+                <ul>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">TRAVEL</a>
+                <ul>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">SPA</a>
+                <ul>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">CONTACT</a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="header__content">
-          <p class="header__content--top">Best Place for</p>
-          <div class="header__content--main">Spend Your Holiday</div>
+          <div class="header__content--top">
+            <p>Best Place for</p>
+          </div>
+          <div class="header__content--mid">
+            <p>Spend Your Holiday</p>
+          </div>
           <div class="header__content--bottom">
-            Responsive and Elegant Design
+            <p>Responsive and Elegant Design</p>
           </div>
         </div>
-
         <div class="header__arrow">
-          <i class="far fa-chevron-down"></i>
+          <i class="fal fa-chevron-down"></i>
         </div>
       </div>
     </div>
@@ -85,8 +119,8 @@
       <section class="welcome">
         <div class="container">
           <div class="welcome__text">
-            <div class="welcom__text--title">Welcome</div>
-            <div class="welcom__text--content">
+            <div class="welcome__text--title">Welcome</div>
+            <div class="welcome__text--content">
               <p>
                 dolor sit amet, consectetur adipiscing elit. Suspendisse
                 condimentum egestas tellus et viverra. Vestibulum euismod lacus
@@ -107,43 +141,43 @@
 
           <div class="welcome__icon">
             <div class="row">
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/beg.png" alt="beg" />
                 </div>
                 <div class="welcome__icon--title">LUXURY GUEST ROOM</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/breakfast.png" alt="breakfast" />
                 </div>
                 <div class="welcome__icon--title">ELEGANT RESTAURANT</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/key.png" alt="key" />
                 </div>
                 <div class="welcome__icon--title">FREE LOCKERS</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/pool.png" alt="pool" />
                 </div>
                 <div class="welcome__icon--title">INFINITY SWIMMING POOL</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/airplane.png" alt="airplane" />
                 </div>
                 <div class="welcome__icon--title">AIRPORT DROP OFF SERVICE</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/service.png" alt="service" />
                 </div>
                 <div class="welcome__icon--title">24 HOURS SUPPORT</div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/wifi.png" alt="wifi" />
                 </div>
@@ -151,7 +185,7 @@
                   HEIGHT SPEED INTERNET / WIFI
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-3 welcom__icon--item">
+              <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
                 <div class="welcome__icon--img">
                   <img src="./images/icon/parking.png" alt="parking" />
                 </div>
@@ -439,21 +473,20 @@
         </div>
       </section>
 
-      <!-- <section class="logo">
-            <div class="test">
-                <img src="./images/logos/adobe.png" alt="">
-                <img src="./images/logos/apple.png" alt="">
-                <img src="./images/logos/behance.png" alt="">
-                <img src="./images/logos/dell.png" alt="">
-                <img src="./images/logos/dribbble.png" alt="">
-                <img src="./images/logos/envato.png" alt="">
-                <img src="./images/logos/github.png" alt="">
-                <img src="./images/logos/hp.png" alt="">
-                <img src="./images/logos/microsoft.png" alt="">
-                <img src="./images/logos/nokia.png" alt="">
-                <img src="./images/logos/sony.png" alt="">
-            </div>
-        </section> -->
+      <section class="logo">
+        <img src="./images/logos/adobe.png" alt="" />
+        <img src="./images/logos/apple.png" alt="" />
+        <img src="./images/logos/behance.png" alt="" />
+        <img src="./images/logos/dell.png" alt="" />
+        <img src="./images/logos/dribbble.png" alt="" />
+        <img src="./images/logos/envato.png" alt="" />
+        <img src="./images/logos/github.png" alt="" />
+        <img src="./images/logos/google.png" alt="" />
+        <img src="./images/logos/hp.png" alt="" />
+        <img src="./images/logos/microsoft.png" alt="" />
+        <img src="./images/logos/nokia.png" alt="" />
+        <img src="./images/logos/sony.png" alt="" />
+      </section>
     </div>
     <!-- end content -->
 
