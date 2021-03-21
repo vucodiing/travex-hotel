@@ -90,8 +90,10 @@ body {
   .header ul li#home {
     background-color: #cc9966; }
   .header__menu--nav ul li:hover ul {
+    margin-top: 10px;
     display: block;
-    background-color: #7f7f7f; }
+    background-color: #7f7f7f;
+    width: 100px; }
   .header__menu--nav ul li:hover {
     background-color: #cc9966; }
     .header__menu--nav ul li:hover a {

@@ -131,11 +131,14 @@ body {
     background-color: #cc9966;
   }
   &__menu--nav ul li:hover ul {
+    margin-top: 10px;
     display: block;
     background-color: #7f7f7f;
+    width: 100px;
   }
   &__menu--nav ul li:hover {
     background-color: #cc9966;
+
     a {
       color: #fff;
     }
