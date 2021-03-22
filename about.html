@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Contact Us</title>
+    <title>About Us</title>
     <meta name="Description" content="Enter your description here" />
     <meta content="" name="keywords" />
 
@@ -28,12 +28,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/plugins/fontawesome/all.min.css" />
+
     <link rel="stylesheet" href="./plugins/slick/slick.css" />
     <link rel="stylesheet" href="./plugins/slick/slick-theme.css" />
+
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
     <!-- start header -->
@@ -116,7 +118,7 @@
               <a href="reserve.html">RESERVE</a>
             </li>
             <li>
-              <a href="travel.html">TRAVEL</a>
+              <a href="travel">TRAVEL</a>
               <ul>
                 <li><a href="#">In country</a></li>
                 <li><a href="#">Out country</a></li>
@@ -138,91 +140,113 @@
 
         <div class="header__content">
           <div class="header__content--top">
-            <p>Contact Us</p>
+            <p>About</p>
           </div>
         </div>
       </div>
     </div>
     <!-- end header -->
 
-    <!-- start google map -->
-    <div class="container contact__map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14903.76504387356!2d105.79380725!3d20.9548739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1616300300096!5m2!1svi!2s"
-        width="100%"
-        height="500"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-    <!-- end google map -->
-
-    <!-- start confirm -->
-    <div class="confirm">
+    <!-- start about -->
+    <section class="welcome">
       <div class="container">
-        <div class="row">
-          <div class="confirm__form col-12 col-lg-6">
-            <form action="" method="post" class="form">
-              <div class="confirm__form--list">
-                <label for="">Name<span>*</span></label>
-                <input
-                  name="name"
-                  placeholder="Enter your name"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="confirm__form--list">
-                <label for="">Email<span>*</span></label>
-                <input
-                  name="email"
-                  placeholder="Enter your mail"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="confirm__form--list">
-                <label for="">Phone<span>*</span></label>
-                <input
-                  name="phone"
-                  placeholder="Enter your phone"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="confirm__form--list">
-                <label for="">Message</label>
-                <textarea placeholder="Enter your message"></textarea>
-              </div>
-
-              <button type="submit">SUBMIT</button>
-            </form>
+        <div class="welcome__text">
+          <div class="welcome__text--title">Welcome</div>
+          <div class="welcome__text--content">
+            <p>
+              dolor sit amet, consectetur adipiscing elit. Suspendisse
+              condimentum egestas tellus et viverra. Vestibulum euismod lacus
+              eget nisi ornare, id laoreet tortor dapibus. Donec lacinia euismod
+              diam, convallis tempus risus. Ut et felis tempor eros blandit
+              feugiat ut non enim. In vestibulum ligula blandit magna blandit
+              dictum. Aenean ultricies enim nec lorem vestibulum. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Suspendisse
+              condimentum egestas tellus et viverra. Vestibulum euismod lacus
+              eget nisi ornare, id laoreet tortor dapibus. Donec lacinia euismod
+              diam, convallis tempus risus. Ut et felis tempor eros blandit
+              feugiat ut non enim. In vestibulum ligula blandit magna blandit
+              dictum. Aenean ultricies enim nec lorem vestibulum, nec
+            </p>
           </div>
-          <div class="confirm__contact col-12 col-lg-6">
-            <div class="confirm__contact--list">
-              <i class="fas fa-envelope"></i>
-              <p>design@creativeracer.net</p>
+        </div>
+
+        <div class="welcome__icon">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/beg.png" alt="beg" />
+              </div>
+              <div class="welcome__icon--title">LUXURY GUEST ROOM</div>
             </div>
-            <div class="confirm__contact--list">
-              <i class="fas fa-phone-alt"></i>
-              <p>+012 345 678 902</p>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/breakfast.png" alt="breakfast" />
+              </div>
+              <div class="welcome__icon--title">ELEGANT RESTAURANT</div>
             </div>
-            <div class="confirm__contact--list">
-              <i class="fas fa-location-arrow"></i>
-              <p>
-                Wall Street, New York City,<br />
-                New York, USA.
-              </p>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/key.png" alt="key" />
+              </div>
+              <div class="welcome__icon--title">FREE LOCKERS</div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/pool.png" alt="pool" />
+              </div>
+              <div class="welcome__icon--title">INFINITY SWIMMING POOL</div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/airplane.png" alt="airplane" />
+              </div>
+              <div class="welcome__icon--title">AIRPORT DROP OFF SERVICE</div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/service.png" alt="service" />
+              </div>
+              <div class="welcome__icon--title">24 HOURS SUPPORT</div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/wifi.png" alt="wifi" />
+              </div>
+              <div class="welcome__icon--title">
+                HEIGHT SPEED INTERNET / WIFI
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 welcome__icon--item">
+              <div class="welcome__icon--img">
+                <img src="./images/icon/parking.png" alt="parking" />
+              </div>
+              <div class="welcome__icon--title">CAR PARKING</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome__gallery">
+          <div class="row">
+            <div class="col-12 col-md-4 welcome__gallery--img">
+              <a href="#">
+                <img src="./images/gallery/gallery-01.jpeg" alt="gallery" />
+              </a>
+            </div>
+            <div class="col-12 col-md-4 welcome__gallery--img">
+              <a href="#">
+                <img src="./images/gallery/gallery-02.jpeg" alt="gallery" />
+              </a>
+            </div>
+            <div class="col-12 col-md-4 welcome__gallery--img">
+              <a href="#">
+                <img src="./images/gallery/gallery-03.jpeg" alt="gallery" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end confirm -->
+    </section>
+    <!-- end about -->
 
     <!-- start footer -->
     <div class="footer">
@@ -265,10 +289,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./plugins/validation1.19.3/jquery.validate.min.js"></script>
-    <script src="/plugins/fontawesome/all.min.js"></script>
     <script src="./plugins/slick/slick.min.js"></script>
+    <script src="/plugins/fontawesome/all.min.js"></script>
     <!-- Template Main JS File -->
-    <!-- <script src="./js/main.js"></script> -->
-    <script src="./js/contact.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

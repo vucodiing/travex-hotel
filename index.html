@@ -48,50 +48,95 @@
             <a href="index.html"><h1>Travex</h1></a>
           </div>
 
-          <div class="header__menu--nav">
+          <div class="header__menu--nav d-none d-lg-block">
             <ul>
-              <li id="home"><a href="#">HOME</a></li>
+              <li id="home"><a href="index.html">HOME</a></li>
               <li id="about">
-                <a href="#">ABOUT</a>
+                <a href="about.html">ABOUT</a>
               </li>
               <li id="room">
-                <a href="#">ROOMS</a>
+                <a href="rooms.html">ROOMS</a>
                 <ul>
                   <li><a href="#">Standard</a></li>
                   <li><a href="#">Deluxe</a></li>
                   <li><a href="#">Family</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#">GALLERY</a>
-                <ul>
-                  <li><a href="#">Hotel</a></li>
-                  <li><a href="#">Spa</a></li>
-                </ul>
+              <li id="gallery">
+                <a href="gallery.html">GALLERY</a>
               </li>
-              <li>
-                <a href="#">REVERSE</a>
+              <li id="reserve">
+                <a href="reserve.html">RESERVE</a>
               </li>
-              <li>
-                <a href="#">TRAVEL</a>
+              <li id="travel">
+                <a href="travel.html">TRAVEL</a>
                 <ul>
                   <li><a href="#">In country</a></li>
                   <li><a href="#">Out country</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#">SPA</a>
+              <li id="spa">
+                <a href="spa.html">SPA</a>
                 <ul>
                   <li><a href="#">For Men</a></li>
                   <li><a href="#">For Woman</a></li>
                 </ul>
               </li>
-              <li>
+              <li id="contact">
                 <a href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
+
+          <div class="header__menu--nav-button d-block d-lg-none">
+            <i class="far fa-bars"></i>
+          </div>
         </div>
+        <!-- start menu for mobile -->
+        <div class="header__menu--mobile">
+          <div class="button-group">
+            <h2>MENU</h2>
+            <i class="fas fa-window-close" id="close-menu-mobile"></i>
+          </div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="rooms.html">ROOMS</a>
+              <ul>
+                <li><a href="#">Standard</a></li>
+                <li><a href="#">Deluxe</a></li>
+                <li><a href="#">Family</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="reserve.html">RESERVE</a>
+            </li>
+            <li>
+              <a href="travel.html">TRAVEL</a>
+              <ul>
+                <li><a href="#">In country</a></li>
+                <li><a href="#">Out country</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="spa.html">SPA</a>
+              <ul>
+                <li><a href="#">For Men</a></li>
+                <li><a href="#">For Woman</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end menu for mobile -->
 
         <div class="header__content">
           <div class="header__content--top">
@@ -216,24 +261,52 @@
       <section class="special">
         <div class="container-fluid">
           <div class="special__title">Special Room</div>
-          <div class="special__content">
-            <div class="container">
-              <div class="row reverse">
-                <div class="col-12 col-md-6">
-                  <div class="special__content--title">Deluxe</div>
-                  <div class="special__content--content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse condimentum egestas tellus et viverra.
-                      Vestibulum euismod lacus eget nisi ornare, id laoreet
-                      tortor dapibus.
-                    </p>
+          <div class="slick">
+            <div class="special__content">
+              <div class="row">
+                <div class="reverse">
+                  <div class="col-12 col-md-6">
+                    <div class="special__content--title">Deluxe</div>
+                    <div class="special__content--content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse condimentum egestas tellus et viverra.
+                        Vestibulum euismod lacus eget nisi ornare, id laoreet
+                        tortor dapibus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 special__content--image-full">
+                    <a href="#"
+                      ><img
+                        src="./images/gallery/gallery-01.jpeg"
+                        alt="gallery"
+                    /></a>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 special__content--image-full">
-                  <a href="#"
-                    ><img src="./images/gallery/gallery-01.jpeg" alt="gallery"
-                  /></a>
+              </div>
+            </div>
+            <div class="special__content">
+              <div class="row">
+                <div class="reverse">
+                  <div class="col-12 col-md-6">
+                    <div class="special__content--title">Deluxe</div>
+                    <div class="special__content--content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse condimentum egestas tellus et viverra.
+                        Vestibulum euismod lacus eget nisi ornare, id laoreet
+                        tortor dapibus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 special__content--image-full">
+                    <a href="#"
+                      ><img
+                        src="./images/gallery/gallery-02.jpeg"
+                        alt="gallery"
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -471,7 +544,55 @@
       </section>
 
       <section class="logo">
-        <img src="./images/logos/adobe.png" alt="" />
+        <div class="container">
+          <div class="row logoo">
+            <div class="logo-slick">
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/adobe.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/apple.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/behance.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/dell.png" alt="" />
+              </div>
+            </div>
+
+            <div class="logo-slick">
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/dribbble.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/envato.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/github.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/google.png" alt="" />
+              </div>
+            </div>
+
+            <div class="logo-slick">
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/hp.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/microsoft.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/nokia.png" alt="" />
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <img src="./images/logos/sony.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="./images/logos/adobe.png" alt="" />
         <img src="./images/logos/apple.png" alt="" />
         <img src="./images/logos/behance.png" alt="" />
         <img src="./images/logos/dell.png" alt="" />
@@ -482,7 +603,7 @@
         <img src="./images/logos/hp.png" alt="" />
         <img src="./images/logos/microsoft.png" alt="" />
         <img src="./images/logos/nokia.png" alt="" />
-        <img src="./images/logos/sony.png" alt="" />
+        <img src="./images/logos/sony.png" alt="" /> -->
       </section>
     </div>
     <!-- end content -->

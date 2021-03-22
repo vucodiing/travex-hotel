@@ -25,7 +25,7 @@ $(document).ready(function () {
     if (pos_body < 630) {
       $("#home").css("background-color", "#cc9966");
     } else {
-      $("#home").css("background-color", "#000");
+      $("#home").css("background-color", "inherit");
     }
 
     // change background button menu ABOUT
@@ -44,22 +44,33 @@ $(document).ready(function () {
   });
 });
 
+// show menu mobile
+$(document).ready(function () {
+  $(".header__menu--nav-button").click(function () {
+    $(".header__menu--mobile").css("left", "0");
+  });
+  $("#close-menu-mobile").click(function () {
+    $(".header__menu--mobile").css("left", "-210px");
+  });
+});
 // counter
-$(".count").each(function () {
-  $(this)
-    .prop("Counter", 0)
-    .animate(
-      {
-        Counter: $(this).text(),
-      },
-      {
-        duration: 4000,
-        easing: "swing",
-        step: function (now) {
-          $(this).text(Math.ceil(now));
+$(document).ready(function () {
+  $(".count").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
         },
-      }
-    );
+        {
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
+  });
 });
 
 // inside hotel
@@ -87,10 +98,16 @@ $(".review__content").slick({
   adaptiveHeight: true,
 });
 
-// logos
-$(".logo").slick({
-  slidesToShow: 4,
-  slidesToScroll: 4,
+// logo
+$(".logoo").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
   dots: true,
-  // dotClass: slick - dots,
+});
+
+// special room
+$(".slick").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
 });

@@ -1,4 +1,11 @@
 @media (max-width: 425px) {
+  .header__content {
+    width: 300px; }
+
+  .header__content--top,
+  .header__content--mid {
+    font-size: 47px; }
+
   .banner__content--1 {
     font-size: 25px;
     line-height: 40px; }
@@ -29,7 +36,12 @@
     justify-content: space-around;
     margin: auto;
     padding: 90px 0; } }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .header__menu {
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #000 !important; }
+
   .video iframe {
     width: 100%; } }
 @media (min-width: 769px) {

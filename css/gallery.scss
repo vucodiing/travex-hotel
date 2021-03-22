@@ -1,0 +1,19 @@
+.header-bg {
+  height: 400px;
+  background-image: url(../images/gallery/gallery-banner.jpeg);
+}
+.header__content {
+  top: 25%;
+}
+#gallery {
+  background-color: #cc9966;
+}
+.gallery {
+  padding: 30px 15px;
+  &__item {
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+  }
+}

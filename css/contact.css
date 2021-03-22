@@ -1,10 +1,66 @@
 .header-bg {
   height: 400px; }
 
+#contact {
+  background-color: #cc9966; }
+
 .header__content {
-  top: 45%; }
+  top: 25%; }
 
 .contact__map {
   padding: 40px 0 20px; }
+
+::placeholder {
+  font-size: 13px;
+  font-style: italic;
+  color: #717171;
+  padding-left: 5px; }
+
+.confirm {
+  font-size: 16px;
+  padding-bottom: 40px; }
+  .confirm__form {
+    text-align: center; }
+    .confirm__form input,
+    .confirm__form textarea {
+      width: 100%;
+      height: 46px;
+      padding-left: 5px;
+      border: 1px solid #717171; }
+    .confirm__form textarea {
+      height: 100px; }
+    .confirm__form button {
+      color: #fff;
+      background-color: #cc9966;
+      padding: 5px 25px;
+      border: none;
+      font-size: 16px;
+      margin: 0 0 15px; }
+  .confirm__form--list {
+    width: 300px;
+    margin: auto; }
+    .confirm__form--list span {
+      color: red; }
+    .confirm__form--list label.error {
+      font-size: 13px;
+      font-style: italic;
+      color: red; }
+  .confirm__form--list:not(:last-child), .confirm__contact--list:not(:last-child) {
+    padding-bottom: 15px; }
+  .confirm__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .confirm__contact--list {
+    text-align: center;
+    width: 350px;
+    background-color: #eeeeee;
+    padding: 40px; }
+    .confirm__contact--list svg {
+      color: #cc9966;
+      margin-bottom: 5px; }
+    .confirm__contact--list p {
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=contact.css.map */
