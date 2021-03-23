@@ -28,16 +28,6 @@ $(document).ready(function () {
   });
 });
 
-// carousel
-$(".carousel").slick({
-  arrows: false,
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
 // scroll page fix menu
 $(document).ready(function () {
   $(window).scroll(function (event) {
@@ -45,13 +35,13 @@ $(document).ready(function () {
 
     // change color menu
     if (pos_body > 270) {
-      $(".spa__menu").css({
+      $(".tour__menu").css({
         position: "fixed",
         opacity: "1",
         top: "58px",
       });
     } else {
-      $(".spa__menu").css({
+      $(".tour__menu").css({
         position: "absolute",
         opacity: "0.8",
         top: "343px",

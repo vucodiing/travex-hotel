@@ -40,6 +40,9 @@
     justify-content: space-around;
     margin: auto;
     padding: 90px 0; } }
+@media (max-width: 768px) {
+  .tour__detail a {
+    font-size: 16px; } }
 @media (max-width: 991px) {
   .spa__menu {
     top: 58px !important; }

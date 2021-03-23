@@ -6,7 +6,7 @@
   background-color: #cc9966;
 }
 .header__content {
-  top: 25%;
+  top: 20%;
 }
 
 .header-bg {
@@ -22,7 +22,7 @@
     position: absolute;
     top: 343px;
     width: 100%;
-    z-index: 1001;
+    z-index: 999;
     a {
       color: #616161;
       transition: 0.3s;
