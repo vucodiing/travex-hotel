@@ -378,19 +378,39 @@ body {
   width: 70%;
   margin: auto; }
 
-.logo {
-  background-color: #fff; }
-  .logo .slick-list {
-    width: 100%; }
-    .logo .slick-list .slick-track {
-      display: flex;
-      align-items: center; }
-      .logo .slick-list .slick-track img:focus {
-        border: none; }
-  .logo .logo-slick {
-    display: flex;
-    align-items: center;
-    padding-top: 20px; }
+.logo .slick-list {
+  width: 100%; }
+.logo img {
+  height: 150px;
+  object-fit: none; }
+.logo .fix {
+  width: 200px;
+  height: 150px;
+  background-repeat: no-repeat; }
+.logo__1 {
+  background-image: url(../images/logos/adobe.png); }
+.logo__2 {
+  background-image: url(../images/logos/apple.png); }
+.logo__3 {
+  background-image: url(../images/logos/behance.png); }
+.logo__4 {
+  background-image: url(../images/logos/dell.png); }
+.logo__5 {
+  background-image: url(../images/logos/dribbble.png); }
+.logo__6 {
+  background-image: url(../images/logos/envato.png); }
+.logo__7 {
+  background-image: url(../images/logos/github.png); }
+.logo__8 {
+  background-image: url(../images/logos/google.png); }
+.logo__9 {
+  background-image: url(../images/logos/hp.png); }
+.logo__10 {
+  background-image: url(../images/logos/microsoft.png); }
+.logo__11 {
+  background-image: url(../images/logos/nokia.png); }
+.logo__12 {
+  background-image: url(../images/logos/sony.png); }
 
 .footer {
   text-align: center;
