@@ -1,0 +1,43 @@
+.header-bg {
+  height: 400px; }
+
+#spa {
+  background-color: #cc9966; }
+
+.header__content {
+  top: 25%; }
+
+.header-bg {
+  background-image: url(../images/spa/spa-banner.jpeg); }
+
+.spa {
+  text-align: center; }
+  .spa__menu {
+    background-color: #efeeed;
+    padding: 10px 0px;
+    opacity: 0.8;
+    position: absolute;
+    top: 343px;
+    width: 100%;
+    z-index: 1001; }
+    .spa__menu a {
+      color: #616161;
+      transition: 0.3s;
+      font-size: 18px; }
+      .spa__menu a:hover {
+        color: #cc9966; }
+    .spa__menu svg {
+      opacity: 0.8;
+      font-size: 18px; }
+  .spa__title h2 {
+    color: #cc9966;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 40px 0; }
+  .spa__desc p {
+    font-size: 16px;
+    color: #616161;
+    text-align: justify;
+    margin-bottom: 15px; }
+
+/*# sourceMappingURL=spa.css.map */

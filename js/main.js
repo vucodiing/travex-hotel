@@ -79,11 +79,11 @@ $(".hotel__img").slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: ".hotel__button",
+  // asNavFor: ".hotel__button",
 });
 $(".hotel__button").slick({
   slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   asNavFor: ".hotel__img",
   centerMode: true,
   focusOnSelect: true,
@@ -146,4 +146,5 @@ $(".slick").slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  autoplay: true,
 });

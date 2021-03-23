@@ -23,6 +23,10 @@
     flex-direction: inherit;
     text-align: end; }
 
+  .hotel__img .hotel__img--desc {
+    width: 570px;
+    margin: auto; }
+
   .room {
     padding: 0 60px; }
     .room .room__img--inline {
@@ -37,6 +41,9 @@
     margin: auto;
     padding: 90px 0; } }
 @media (max-width: 991px) {
+  .spa__menu {
+    top: 58px !important; }
+
   .header__menu {
     justify-content: space-between;
     padding: 5px 20px;

@@ -1,32 +1,3 @@
-$(document).ready(function () {
-  $(".form").validate({
-    rules: {
-      name: "required",
-      phone: {
-        required: true,
-        minlength: 10,
-        digits: true,
-      },
-      email: {
-        required: true,
-        email: true,
-      },
-    },
-    messages: {
-      name: "Vui lòng nhập tên",
-      phone: {
-        required: "Vui lòng nhập số điện thoại",
-        minlength: "Số điện thoại tối thiểu 10 chữ số",
-        digits: "Số điện thoại sai định dạng",
-      },
-      email: {
-        required: "Vui lòng nhập email",
-        email: "Email không đúng định dạng",
-      },
-    },
-  });
-});
-
 // HEADER
 $(document).ready(function () {
   $(window).scroll(function (event) {
@@ -54,5 +25,37 @@ $(document).ready(function () {
   });
   $("#close-menu-mobile").click(function () {
     $(".header__menu--mobile").css("left", "-210px");
+  });
+});
+
+// carousel
+$(".carousel").slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+// scroll page fix menu
+$(document).ready(function () {
+  $(window).scroll(function (event) {
+    let pos_body = $("html,body").scrollTop();
+
+    // change color menu
+    if (pos_body > 270) {
+      $(".spa__menu").css({
+        position: "fixed",
+        opacity: "1",
+        top: "68px",
+      });
+    } else {
+      $(".spa__menu").css({
+        position: "absolute",
+        opacity: "0.8",
+        top: "343px",
+      });
+    }
   });
 });

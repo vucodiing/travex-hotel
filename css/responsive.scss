@@ -34,6 +34,14 @@
       }
     }
   }
+  .hotel {
+    &__img {
+      .hotel__img--desc {
+        width: 570px;
+        margin: auto;
+      }
+    }
+  }
 
   .room {
     padding: 0 60px;
@@ -56,6 +64,9 @@
 }
 
 @media (max-width: 991px) {
+  .spa__menu {
+    top: 58px !important;
+  }
   .header__menu {
     justify-content: space-between;
     padding: 5px 20px;

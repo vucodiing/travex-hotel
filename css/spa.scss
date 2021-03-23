@@ -1,0 +1,51 @@
+.header-bg {
+  height: 400px;
+}
+
+#spa {
+  background-color: #cc9966;
+}
+.header__content {
+  top: 25%;
+}
+
+.header-bg {
+  background-image: url(../images/spa/spa-banner.jpeg);
+}
+
+.spa {
+  text-align: center;
+  &__menu {
+    background-color: #efeeed;
+    padding: 10px 0px;
+    opacity: 0.8;
+    position: absolute;
+    top: 343px;
+    width: 100%;
+    z-index: 1001;
+    a {
+      color: #616161;
+      transition: 0.3s;
+      font-size: 18px;
+      &:hover {
+        color: #cc9966;
+      }
+    }
+    svg {
+      opacity: 0.8;
+      font-size: 18px;
+    }
+  }
+  &__title h2 {
+    color: #cc9966;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 40px 0;
+  }
+  &__desc p {
+    font-size: 16px;
+    color: #616161;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+}

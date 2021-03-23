@@ -49,6 +49,12 @@ a {
 button {
   cursor: pointer;
 }
+img:focus {
+  outline: none;
+}
+p {
+  margin-bottom: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -291,10 +297,16 @@ body {
   }
   &__content {
     padding-bottom: 40px;
+    &:focus {
+      outline: none;
+    }
     img {
       height: 500px;
       width: 100%;
       object-fit: cover;
+      &:focus {
+        outline: none;
+      }
     }
     .reverse {
       display: flex;
@@ -334,7 +346,6 @@ body {
       object-fit: cover;
     }
     .room__img--inline--50 {
-      @include transition(0.3s);
       .room__img--inline--50--content {
         @include transition(0.3s);
         display: none;
@@ -419,6 +430,16 @@ body {
 // inside our hotel
 .hotel {
   text-align: center;
+  .slick-list {
+    width: 100%;
+    .slick-track {
+      display: flex;
+      justify-content: center;
+    }
+    .slick-trach img {
+      object-fit: cover;
+    }
+  }
   &__title {
     font-size: 40px;
     padding-top: 60px;
@@ -434,13 +455,11 @@ body {
     .hotel__img--02 {
       padding: 0 15px;
     }
-    .hotel__img--01--title {
+    .hotel__img--title {
       font-size: 30px;
     }
-    .hotel__img--01--desc {
+    .hotel__img--desc {
       font-size: 16px;
-      width: 570px;
-      margin: auto;
       padding-top: 20px;
     }
   }
@@ -486,6 +505,10 @@ body {
   &__content--slick {
     padding: 0 40px;
   }
+  .slick-list {
+    width: 70%;
+    margin: auto;
+  }
 }
 .slick-prev {
   left: 30px;
@@ -493,13 +516,12 @@ body {
 .slick-next {
   right: 30px;
 }
-.slick-list {
-  width: 70%;
-  margin: auto;
-}
 
 // logos
 .logo {
+  height: 250px;
+  align-items: center;
+  display: flex;
   .slick-list {
     width: 100%;
   }
@@ -511,42 +533,6 @@ body {
     width: 200px;
     height: 150px;
     background-repeat: no-repeat;
-  }
-  &__1 {
-    background-image: url(../images/logos/adobe.png);
-  }
-  &__2 {
-    background-image: url(../images/logos/apple.png);
-  }
-  &__3 {
-    background-image: url(../images/logos/behance.png);
-  }
-  &__4 {
-    background-image: url(../images/logos/dell.png);
-  }
-  &__5 {
-    background-image: url(../images/logos/dribbble.png);
-  }
-  &__6 {
-    background-image: url(../images/logos/envato.png);
-  }
-  &__7 {
-    background-image: url(../images/logos/github.png);
-  }
-  &__8 {
-    background-image: url(../images/logos/google.png);
-  }
-  &__9 {
-    background-image: url(../images/logos/hp.png);
-  }
-  &__10 {
-    background-image: url(../images/logos/microsoft.png);
-  }
-  &__11 {
-    background-image: url(../images/logos/nokia.png);
-  }
-  &__12 {
-    background-image: url(../images/logos/sony.png);
   }
 }
 
