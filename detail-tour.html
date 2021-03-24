@@ -184,40 +184,56 @@
               </li>
             </ul>
 
-            // check menu
-            <div class="menu_toggle d-block d-sm-none">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-toggle="collapse"
-                data-target="#demo"
-              >
-                Simple collapsible
-              </button>
-              <ul class="collapse" id="demo" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#menu1"
+            <!-- check menu -->
+            <div class="menu__toggle d-block d-sm-none">
+              <ul>
+                <li class="menu__toggle--select">
+                  <a
+                    class="nav-link active menu__toggle--content"
+                    data-toggle="tab"
+                    href="#menu1"
                     >2 Days 1 Night</a
                   >
+                  <button id="btn-collapse"><i class="fad fa-bars"></i></button>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#menu2"
+              </ul>
+
+              <ul class="nav nav-tabs menu__toggle--list" role="tablist">
+                <li>
+                  <a
+                    class="nav-link menu__choose--content 1"
+                    data-toggle="tab"
+                    href="#menu1"
+                    >4 Days 1 Night</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link menu__choose--content 2"
+                    data-toggle="tab"
+                    href="#menu2"
                     >3 Days 2 Night</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#menu3"
+                <li>
+                  <a
+                    class="nav-link menu__choose--content 3"
+                    data-toggle="tab"
+                    href="#menu3"
                     >Inclusions and Exclusions</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#menu4"
+                <li>
+                  <a
+                    class="nav-link menu__choose--content 4"
+                    data-toggle="tab"
+                    href="#menu4"
                     >Gallery</a
                   >
                 </li>
               </ul>
             </div>
-            // end check menu
+            <!-- end check menu -->
           </div>
           <div class="tab-content">
             <div id="menu1" class="container tab-pane active">

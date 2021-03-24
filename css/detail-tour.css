@@ -1,11 +1,14 @@
 .header-bg {
   height: 400px; }
 
+ul {
+  list-style: none; }
+
 #tour {
   background-color: #cc9966; }
 
 .header__content {
-  top: 20%; }
+  top: 25%; }
 
 .header-bg {
   background-image: url(../images/tour/tour-07.jpeg); }
@@ -62,6 +65,30 @@
     margin-bottom: 30px; }
     .tour button:hover {
       opacity: 0.8; }
+
+.menu__toggle--select {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  border: 1px solid #cecece;
+  -moz-box-shadow: 0px 0px 3px #00000020;
+  -webkit-box-shadow: 0px 0px 3px #00000020;
+  box-shadow: 0px 0px 3px #00000020;
+  padding: 5px 5px; }
+  .menu__toggle--select button {
+    margin-bottom: 0; }
+
+.menu__toggle--list {
+  display: none;
+  flex-direction: column; }
+  .menu__toggle--list li {
+    background-color: #eeeeee;
+    border: 1px solid #cecece;
+    -moz-box-shadow: 0px 0px 3px #00000020;
+    -webkit-box-shadow: 0px 0px 3px #00000020;
+    box-shadow: 0px 0px 3px #00000020;
+    padding: 5px 5px;
+    margin-bottom: 5px !important; }
 
 .nav-tabs {
   border-bottom: none; }

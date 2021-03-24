@@ -49,3 +49,24 @@ $(document).ready(function () {
     }
   });
 });
+
+// select menu detail tour on mobile
+$(document).ready(function () {
+  $("#btn-collapse").click(function () {
+    if ($(".menu__toggle--list").is(":hidden") == true) {
+      $(".menu__toggle--list").css("display", "flex");
+    } else {
+      $(".menu__toggle--list").css("display", "none");
+    }
+  });
+
+  let b = [".1", ".2", ".3", ".4"];
+
+  b.forEach(function (item) {
+    $(item).click(function () {
+      let title = $(item).html();
+      $(".menu__toggle--content").html(title);
+      $(".menu__toggle--list").css("display", "none");
+    });
+  });
+});
