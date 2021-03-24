@@ -1,0 +1,36 @@
+.header-bg {
+  background-image: url(../images/404.jpg);
+  height: 700px;
+
+  object-fit: cover;
+}
+#home {
+  background-color: transparent !important;
+}
+.header__content {
+  text-align: center;
+  p {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+button {
+  background-color: #cc9966;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+button::before {
+  content: "\f0a5";
+  font-family: "Font Awesome 5 Pro";
+  padding-right: 5px;
+}
