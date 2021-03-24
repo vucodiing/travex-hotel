@@ -1,0 +1,62 @@
+#room {
+  background-color: #cc9966; }
+
+.header__content {
+  top: 22%; }
+
+.header-bg {
+  background-image: url(../images/rooms/room-banner.jpeg);
+  height: 400px; }
+
+.content {
+  padding: 40px 0 30px; }
+  .content__shot {
+    padding-bottom: 30px;
+    text-align: center; }
+    .content__shot p {
+      font-size: 17px;
+      color: #333; }
+
+.room__image {
+  overflow: hidden; }
+  .room__image .image-hover {
+    transition: 0.3s; }
+    .room__image .image-hover img {
+      width: 100%; }
+    .room__image .image-hover:hover {
+      transform: scale(1.1); }
+.room .padding-room {
+  padding-bottom: 15px; }
+.room__info {
+  padding: 5px;
+  border-left: 1px solid #f1ebeb;
+  border-right: 1px solid #f1ebeb; }
+.room__info--title a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #cc9966; }
+.room__info--desc {
+  font-size: 14px;
+  color: #666666; }
+.room__price {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  color: #666666;
+  border: 1px solid #f1ebeb; }
+  .room__price span {
+    color: #cc9966;
+    font-size: 26px;
+    font-weight: 700; }
+  .room__price button {
+    margin: 10px 0 0;
+    width: 100%;
+    background-color: #cc9966;
+    padding: 10px 25px;
+    color: #fff;
+    border: none;
+    font-size: 18px; }
+    .room__price button:hover {
+      opacity: 0.8; }
+
+/*# sourceMappingURL=rooms.css.map */

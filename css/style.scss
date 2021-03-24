@@ -44,8 +44,14 @@ a {
     text-decoration: none;
     color: $link-hover;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
+ul {
+  list-style: none;
+}
 button {
   cursor: pointer;
 }
@@ -480,6 +486,9 @@ body {
   margin-top: 70px;
   background-color: #232323;
   text-align: center;
+  &__content {
+    padding-bottom: 30px;
+  }
   &__content--img {
     padding-bottom: 40px;
     @include d-flex();
@@ -552,7 +561,7 @@ body {
   &__social a {
     color: #7f7f7f;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 0 15px;
     &:hover {
       color: #cc9966;
     }

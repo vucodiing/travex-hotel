@@ -1,0 +1,103 @@
+#room {
+  background-color: #cc9966;
+}
+.header__content {
+  top: 22%;
+}
+
+.header-bg {
+  background-image: url(../images/rooms/room-banner.jpeg);
+  height: 400px;
+}
+
+.content {
+  padding: 40px 0 30px;
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 34px;
+  }
+  &__imageList {
+    padding: 10px;
+    img {
+      padding: 5px;
+    }
+  }
+  &__info--hook {
+    position: relative;
+    button {
+      background-color: #cc9966;
+      width: 100%;
+      color: #fff;
+      padding: 10px 0;
+      border: none;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .room-detail::after {
+    background: #cc9966 none repeat scroll 0 0;
+    top: 54px;
+    content: "";
+    height: 2px;
+    left: 17px;
+    position: absolute;
+    width: 120px;
+  }
+  .room-desc {
+    font-size: 16px;
+    color: #333;
+  }
+  strong,
+  ul li {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  &__carousel {
+    padding-top: 30px;
+    position: relative;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #d3d3d3;
+    p {
+      font-size: 20px;
+    }
+    strong {
+      color: #cc9966;
+      font-size: 29px;
+    }
+  }
+}
+
+.carousel__list {
+  text-align: center;
+  margin: 5px;
+  img {
+    width: 100%;
+  }
+  &:focus {
+    outline: none;
+  }
+  h4 {
+    color: #cc9966;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 700;
+  }
+}
+
+.content__carousel--h3::after {
+  background: #cc9966 none repeat scroll 0 0;
+  top: 83px;
+  content: "";
+  height: 2px;
+  left: 2px;
+  position: absolute;
+  width: 120px;
+}

@@ -14,6 +14,11 @@ a {
   a:hover {
     text-decoration: none;
     color: #cc9966; }
+  a:focus {
+    outline: none; }
+
+ul {
+  list-style: none; }
 
 button {
   cursor: pointer; }
@@ -356,6 +361,8 @@ body {
   margin-top: 70px;
   background-color: #232323;
   text-align: center; }
+  .review__content {
+    padding-bottom: 30px; }
   .review__content--img {
     padding-bottom: 40px;
     display: -webkit-box;
@@ -415,7 +422,7 @@ body {
   .footer__social a {
     color: #7f7f7f;
     font-size: 20px;
-    padding: 0 20px; }
+    padding: 0 15px; }
     .footer__social a:hover {
       color: #cc9966; }
   .footer__content {

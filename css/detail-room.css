@@ -1,0 +1,84 @@
+#room {
+  background-color: #cc9966; }
+
+.header__content {
+  top: 22%; }
+
+.header-bg {
+  background-image: url(../images/rooms/room-banner.jpeg);
+  height: 400px; }
+
+.content {
+  padding: 40px 0 30px; }
+  .content h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 34px; }
+  .content__imageList {
+    padding: 10px; }
+    .content__imageList img {
+      padding: 5px; }
+  .content__info--hook {
+    position: relative; }
+    .content__info--hook button {
+      background-color: #cc9966;
+      width: 100%;
+      color: #fff;
+      padding: 10px 0;
+      border: none;
+      transition: 0.3s; }
+      .content__info--hook button:hover {
+        opacity: 0.8; }
+  .content .room-detail::after {
+    background: #cc9966 none repeat scroll 0 0;
+    top: 54px;
+    content: "";
+    height: 2px;
+    left: 17px;
+    position: absolute;
+    width: 120px; }
+  .content .room-desc {
+    font-size: 16px;
+    color: #333; }
+  .content strong,
+  .content ul li {
+    font-size: 16px;
+    padding-left: 20px; }
+  .content__carousel {
+    padding-top: 30px;
+    position: relative; }
+  .content__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #d3d3d3; }
+    .content__price p {
+      font-size: 20px; }
+    .content__price strong {
+      color: #cc9966;
+      font-size: 29px; }
+
+.carousel__list {
+  text-align: center;
+  margin: 5px; }
+  .carousel__list img {
+    width: 100%; }
+  .carousel__list:focus {
+    outline: none; }
+  .carousel__list h4 {
+    color: #cc9966;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 700; }
+
+.content__carousel--h3::after {
+  background: #cc9966 none repeat scroll 0 0;
+  top: 83px;
+  content: "";
+  height: 2px;
+  left: 2px;
+  position: absolute;
+  width: 120px; }
+
+/*# sourceMappingURL=detail-room.css.map */
