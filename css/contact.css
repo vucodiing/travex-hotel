@@ -53,10 +53,18 @@
     justify-content: center;
     flex-direction: column; }
   .confirm__contact--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 350px;
     background-color: #eeeeee;
     padding: 40px; }
+    .confirm__contact--list a {
+      color: #000;
+      transition: 0.3s; }
+      .confirm__contact--list a:hover {
+        color: #cc9966; }
     .confirm__contact--list svg {
       color: #cc9966;
       margin-bottom: 5px; }
