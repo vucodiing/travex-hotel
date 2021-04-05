@@ -6,7 +6,7 @@
   top: 25%; }
 
 #reserve {
-  background-color: #cc9966; }
+  background-color: #f8661e; }
 
 ::placeholder {
   color: #cacaca;
@@ -41,13 +41,13 @@ input {
     margin-top: 6px;
     width: 300px; }
   .captcha button {
-    background-color: #cc9966;
+    background-color: #f8661e;
     color: #fff;
     padding: 10px 25px;
     border: none;
     margin-top: 20px; }
     .captcha button:hover {
-      background-color: #fab876; }
+      background-color: #d3581a; }
 
 label.error {
   color: red;

@@ -2,7 +2,7 @@
   height: 400px; }
 
 #contact {
-  background-color: #cc9966; }
+  background-color: #f8661e; }
 
 .header__content {
   top: 25%; }
@@ -31,7 +31,7 @@
       height: 100px; }
     .confirm__form button {
       color: #fff;
-      background-color: #cc9966;
+      background-color: #f8661e;
       padding: 5px 25px;
       border: none;
       font-size: 16px;
@@ -64,9 +64,9 @@
       color: #000;
       transition: 0.3s; }
       .confirm__contact--list a:hover {
-        color: #cc9966; }
+        color: #f8661e; }
     .confirm__contact--list svg {
-      color: #cc9966;
+      color: #f8661e;
       margin-bottom: 5px; }
     .confirm__contact--list p {
       margin-bottom: 0; }

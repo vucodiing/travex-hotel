@@ -2,7 +2,7 @@
 $bgmain: #fff;
 $bg-black: #000;
 $link-main: #fff;
-$link-hover: #cc9966;
+$link-hover: #f8661e;
 
 //mixin
 @mixin d-flex {
@@ -161,7 +161,7 @@ body {
     width: 100px;
   }
   &__menu--nav ul li:hover {
-    background-color: #cc9966;
+    background-color: #f8661e;
 
     a {
       color: #fff;
@@ -185,7 +185,7 @@ body {
 
   &__arrow {
     font-size: 60px;
-    color: #cc9966;
+    color: #f8661e;
     position: absolute;
     top: 65%;
     left: 50%;
@@ -223,10 +223,10 @@ body {
     }
 
     svg {
-      color: #cc9966;
+      color: #f8661e;
       cursor: pointer;
       &:hover {
-        color: #f5b677;
+        color: #ca5419;
         transition: 0.3s;
       }
     }
@@ -322,7 +322,7 @@ body {
   }
   .special__content--title {
     font-size: 24px;
-    color: #cc9966;
+    color: #f8661e;
   }
   .special__content--content {
     font-size: 14px;
@@ -410,7 +410,7 @@ body {
 
 // counter
 .counter {
-  background-color: #cc9966;
+  background-color: #f8661e;
   color: #fff;
 
   &__group {
@@ -500,7 +500,7 @@ body {
   &__title {
     padding: 40px 0;
     font-size: 40px;
-    color: #cc9966;
+    color: #f8661e;
   }
   &__content--desc,
   &__content--job {
@@ -509,7 +509,7 @@ body {
   }
   &__content--job p:first-child {
     font-size: 18px;
-    color: #cc9966;
+    color: #f8661e;
   }
   &__content--slick {
     padding: 0 40px;
@@ -563,7 +563,7 @@ body {
     font-size: 20px;
     padding: 0 15px;
     &:hover {
-      color: #cc9966;
+      color: #f8661e;
     }
   }
 

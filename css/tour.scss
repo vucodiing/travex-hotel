@@ -3,7 +3,7 @@
 }
 
 #tour {
-  background-color: #cc9966;
+  background-color: #f8661e;
 }
 .header__content {
   top: 20%;
@@ -28,7 +28,7 @@
       transition: 0.3s;
       font-size: 18px;
       &:hover {
-        color: #cc9966;
+        color: #f8661e;
       }
     }
     svg {
@@ -37,7 +37,7 @@
     }
   }
   &__title h2 {
-    color: #cc9966;
+    color: #f8661e;
     font-size: 40px;
     font-weight: 500;
     padding: 40px 0;
@@ -75,7 +75,7 @@
         width: 100%;
         padding: 10px 0;
         border: none;
-        background-color: #cc9966;
+        background-color: #f8661e;
         color: #fff;
         margin-top: 20px;
         &:focus {
@@ -89,7 +89,7 @@
     .tour__box--title {
       font-size: 16px;
       a {
-        color: #cc9966;
+        color: #f8661e;
         &:hover {
           opacity: 0.8;
         }

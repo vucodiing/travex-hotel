@@ -5,7 +5,7 @@ ul {
   list-style: none;
 }
 #tour {
-  background-color: #cc9966;
+  background-color: #f8661e;
 }
 .header__content {
   top: 25%;
@@ -29,7 +29,7 @@ ul {
       transition: 0.3s;
       font-size: 18px;
       &:hover {
-        color: #cc9966;
+        color: #f8661e;
       }
     }
     svg {
@@ -38,7 +38,7 @@ ul {
     }
   }
   &__title h2 {
-    color: #cc9966;
+    color: #f8661e;
     font-size: 40px;
     font-weight: 500;
     padding: 40px 0;
@@ -67,7 +67,7 @@ ul {
     }
   }
   button {
-    background-color: #cc9966;
+    background-color: #f8661e;
     color: #fff;
     padding: 10px 20px;
     border-radius: 3px;

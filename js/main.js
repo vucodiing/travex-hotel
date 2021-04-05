@@ -23,21 +23,21 @@ $(document).ready(function () {
 
     // change background button menu HOME
     if (pos_body < 630) {
-      $("#home").css("background-color", "#cc9966");
+      $("#home").css("background-color", "#f8661e");
     } else {
       $("#home").css("background-color", "inherit");
     }
 
     // change background button menu ABOUT
     if ((pos_body > 630) & (pos_body < 1545)) {
-      $("#about").css("background-color", "#cc9966");
+      $("#about").css("background-color", "#f8661e");
     } else {
       $("#about").css("background-color", "inherit");
     }
 
     // change background button menu ROOMS
     if (pos_body > 1545) {
-      $("#room").css("background-color", "#cc9966");
+      $("#room").css("background-color", "#f8661e");
     } else {
       $("#room").css("background-color", "inherit");
     }

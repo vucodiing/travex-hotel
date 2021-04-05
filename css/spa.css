@@ -2,7 +2,7 @@
   height: 400px; }
 
 #spa {
-  background-color: #cc9966; }
+  background-color: #f8661e; }
 
 .header__content {
   top: 20%; }
@@ -25,12 +25,12 @@
       transition: 0.3s;
       font-size: 18px; }
       .spa__menu a:hover {
-        color: #cc9966; }
+        color: #f8661e; }
     .spa__menu svg {
       opacity: 0.8;
       font-size: 18px; }
   .spa__title h2 {
-    color: #cc9966;
+    color: #f8661e;
     font-size: 40px;
     font-weight: 500;
     padding: 40px 0; }

@@ -13,7 +13,7 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none;
-    color: #cc9966; }
+    color: #f8661e; }
   a:focus {
     outline: none; }
 
@@ -111,7 +111,7 @@ body {
     background-color: #7f7f7f;
     width: 100px; }
   .header__menu--nav ul li:hover {
-    background-color: #cc9966; }
+    background-color: #f8661e; }
     .header__menu--nav ul li:hover a {
       color: #fff; }
   .header__content {
@@ -126,7 +126,7 @@ body {
     font-size: 36px; }
   .header__arrow {
     font-size: 60px;
-    color: #cc9966;
+    color: #f8661e;
     position: absolute;
     top: 65%;
     left: 50%;
@@ -155,10 +155,10 @@ body {
       font-weight: 500;
       margin-bottom: 0; }
     .header__menu--mobile .button-group svg {
-      color: #cc9966;
+      color: #f8661e;
       cursor: pointer; }
       .header__menu--mobile .button-group svg:hover {
-        color: #f5b677;
+        color: #ca5419;
         transition: 0.3s; }
   .header__menu--mobile ul li > ul {
     display: none; }
@@ -237,7 +237,7 @@ body {
       text-align: center; }
   .special .special__content--title {
     font-size: 24px;
-    color: #cc9966; }
+    color: #f8661e; }
   .special .special__content--content {
     font-size: 14px;
     color: #fff; }
@@ -304,10 +304,10 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s; }
     .room__view button:hover {
-      background-color: #cc9966; }
+      background-color: #f8661e; }
 
 .counter {
-  background-color: #cc9966;
+  background-color: #f8661e;
   color: #fff; }
   .counter__group {
     display: block;
@@ -376,13 +376,13 @@ body {
   .review__title {
     padding: 40px 0;
     font-size: 40px;
-    color: #cc9966; }
+    color: #f8661e; }
   .review__content--desc, .review__content--job {
     color: #fff;
     font-size: 14px; }
   .review__content--job p:first-child {
     font-size: 18px;
-    color: #cc9966; }
+    color: #f8661e; }
   .review__content--slick {
     padding: 0 40px; }
   .review .slick-list {
@@ -424,7 +424,7 @@ body {
     font-size: 20px;
     padding: 0 15px; }
     .footer__social a:hover {
-      color: #cc9966; }
+      color: #f8661e; }
   .footer__content {
     font-size: 14px;
     color: #7f7f7f;

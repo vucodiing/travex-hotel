@@ -1,5 +1,5 @@
 #room {
-  background-color: #cc9966; }
+  background-color: #f8661e; }
 
 .header__content {
   top: 22%; }
@@ -21,7 +21,7 @@
   .content__info--hook {
     position: relative; }
     .content__info--hook button {
-      background-color: #cc9966;
+      background-color: #f8661e;
       width: 100%;
       color: #fff;
       padding: 10px 0;
@@ -30,7 +30,7 @@
       .content__info--hook button:hover {
         opacity: 0.8; }
   .content .room-detail::after {
-    background: #cc9966 none repeat scroll 0 0;
+    background: #f8661e none repeat scroll 0 0;
     top: 54px;
     content: "";
     height: 2px;
@@ -56,7 +56,7 @@
     .content__price p {
       font-size: 20px; }
     .content__price strong {
-      color: #cc9966;
+      color: #f8661e;
       font-size: 29px; }
 
 .carousel__list {
@@ -67,13 +67,13 @@
   .carousel__list:focus {
     outline: none; }
   .carousel__list h4 {
-    color: #cc9966;
+    color: #f8661e;
     font-size: 18px;
     padding: 10px 0;
     font-weight: 700; }
 
 .content__carousel--h3::after {
-  background: #cc9966 none repeat scroll 0 0;
+  background: #f8661e none repeat scroll 0 0;
   top: 83px;
   content: "";
   height: 2px;
