@@ -13,6 +13,7 @@
 .spa {
   text-align: center; }
   .spa__menu {
+    display: none;
     background-color: #efeeed;
     padding: 10px 0px;
     opacity: 0.8;
